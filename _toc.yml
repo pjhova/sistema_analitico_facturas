@@ -1,0 +1,6 @@
+# Tabla de contenido del libro
+# Docs: https://jupyterbook.org/en/stable/structure/toc.html
+format: jb-book
+root: intro
+chapters:
+  - file: sistema_analitico_facturas

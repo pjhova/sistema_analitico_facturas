@@ -1,0 +1,3 @@
+# Dependencias para CONSTRUIR el libro (no para ejecutar el notebook).
+# El notebook se publica con sus salidas guardadas; no se re-ejecuta aqui.
+jupyter-book>=1.0

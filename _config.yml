@@ -1,0 +1,31 @@
+# Configuracion de Jupyter Book
+# Docs: https://jupyterbook.org/en/stable/customize/config.html
+title: "Validacion de Facturas Electronicas DIAN mediante KIE"
+author: "Proyecto de Grado — Maestria en Analitica de Datos"
+logo: ""
+copyright: "2026"
+
+# El notebook se orquesta sobre el VPS (GPU, PaddleOCR, modelos y datos).
+# No puede re-ejecutarse en la construccion del libro: se publica con las
+# salidas ya guardadas en el .ipynb.
+execute:
+  execute_notebooks: "off"
+
+# Permite celdas con errores previos guardados sin frenar la construccion
+only_build_toc_files: true
+
+# Enlaces del repositorio (ajusta la URL a tu repo real)
+repository:
+  url: https://github.com/pjhova/sistema_analitico_facturas
+  branch: main
+
+html:
+  use_issues_button: true
+  use_repository_button: true
+
+# Parser de markdown: habilita notacion util (notas, formulas, etc.)
+parse:
+  myst_enable_extensions:
+    - dollarmath
+    - colon_fence
+    - deflist
